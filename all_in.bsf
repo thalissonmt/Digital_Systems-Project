@@ -1,0 +1,219 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 16 16 136 240)
+	(text "all_in" (rect 5 0 29 12)(font "Arial" ))
+	(text "inst" (rect 8 208 25 220)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "infra" (rect 0 0 22 12)(font "Arial" ))
+		(text "infra" (rect 21 27 43 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 1))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "CLK" (rect 0 0 21 12)(font "Arial" ))
+		(text "CLK" (rect 21 43 42 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 1))
+	)
+	(port
+		(pt 120 32)
+		(output)
+		(text "A0[6..0]" (rect 0 0 38 12)(font "Arial" ))
+		(text "A0[6..0]" (rect 61 27 99 39)(font "Arial" ))
+		(line (pt 120 32)(pt 104 32)(line_width 3))
+	)
+	(port
+		(pt 120 48)
+		(output)
+		(text "A1[6..0]" (rect 0 0 38 12)(font "Arial" ))
+		(text "A1[6..0]" (rect 61 43 99 55)(font "Arial" ))
+		(line (pt 120 48)(pt 104 48)(line_width 3))
+	)
+	(port
+		(pt 120 64)
+		(output)
+		(text "B0[6..0]" (rect 0 0 38 12)(font "Arial" ))
+		(text "B0[6..0]" (rect 61 59 99 71)(font "Arial" ))
+		(line (pt 120 64)(pt 104 64)(line_width 3))
+	)
+	(port
+		(pt 120 80)
+		(output)
+		(text "B1[6..0]" (rect 0 0 38 12)(font "Arial" ))
+		(text "B1[6..0]" (rect 61 75 99 87)(font "Arial" ))
+		(line (pt 120 80)(pt 104 80)(line_width 3))
+	)
+	(port
+		(pt 120 96)
+		(output)
+		(text "C0[6..0]" (rect 0 0 40 12)(font "Arial" ))
+		(text "C0[6..0]" (rect 59 91 99 103)(font "Arial" ))
+		(line (pt 120 96)(pt 104 96)(line_width 3))
+	)
+	(port
+		(pt 120 112)
+		(output)
+		(text "C1[6..0]" (rect 0 0 40 12)(font "Arial" ))
+		(text "C1[6..0]" (rect 59 107 99 119)(font "Arial" ))
+		(line (pt 120 112)(pt 104 112)(line_width 3))
+	)
+	(port
+		(pt 120 128)
+		(output)
+		(text "C2[6..0]" (rect 0 0 40 12)(font "Arial" ))
+		(text "C2[6..0]" (rect 59 123 99 135)(font "Arial" ))
+		(line (pt 120 128)(pt 104 128)(line_width 3))
+	)
+	(port
+		(pt 120 144)
+		(output)
+		(text "signA" (rect 0 0 27 12)(font "Arial" ))
+		(text "signA" (rect 72 139 99 151)(font "Arial" ))
+		(line (pt 120 144)(pt 104 144)(line_width 1))
+	)
+	(port
+		(pt 120 160)
+		(output)
+		(text "signB" (rect 0 0 27 12)(font "Arial" ))
+		(text "signB" (rect 72 155 99 167)(font "Arial" ))
+		(line (pt 120 160)(pt 104 160)(line_width 1))
+	)
+	(port
+		(pt 120 176)
+		(output)
+		(text "signC" (rect 0 0 28 12)(font "Arial" ))
+		(text "signC" (rect 71 171 99 183)(font "Arial" ))
+		(line (pt 120 176)(pt 104 176)(line_width 1))
+	)
+	(parameter
+		"wait_for_command"
+		"0000"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"preA"
+		"0001"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Aedit1"
+		"0010"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Aedit2"
+		"0011"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"preB"
+		"0100"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Bedit1"
+		"0101"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"Bedit2"
+		"0110"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"zerar_tudo"
+		"0111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"soma_sub"
+		"1000"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"desligado"
+		"1111111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"zero"
+		"0000001"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"um"
+		"1001111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"dois"
+		"0010010"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"tres"
+		"0000110"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"quatro"
+		"1001100"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"cinco"
+		"0100100"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"seis"
+		"0100000"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"sete"
+		"0001111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"oito"
+		"0000000"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"nove"
+		"0000100"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"wait_until"
+		"5000000"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(drawing
+		(rectangle (rect 16 16 104 208)(line_width 1))
+	)
+	(annotation_block (parameter)(rect 136 -64 236 16))
+)
